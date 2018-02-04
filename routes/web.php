@@ -11,6 +11,10 @@
 |
 */
 
+$router->get('/example', function() {
+    var_dump('test'); exit;
+});
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
