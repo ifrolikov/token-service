@@ -1,0 +1,11 @@
+version: "2"
+services:
+  token-service:
+    build:
+      context: .
+    volumes:
+      - ./:/www:rw
+    container_name: token-service
+    privileged: true
+    ports:
+      - 7702:80
